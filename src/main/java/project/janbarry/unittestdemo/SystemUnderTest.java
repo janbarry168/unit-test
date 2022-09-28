@@ -4,13 +4,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 @Service
-public class SystemUnderTest {
+public class SystemUnderTest extends ParentSystem {
 
     public DependencyOfComponent doc;
 
-    private static ZoneId ZONE_ID = ZoneId.systemDefault();
+    private static ZoneId ZONE_ID = ZoneId.of("Asia/Taipei");
 
     @Autowired
     public SystemUnderTest(DependencyOfComponent doc) {
@@ -18,12 +19,9 @@ public class SystemUnderTest {
     }
 
     public void doLogic() {
-        doc.printDateTime(getZoneId());
-        System.out.println(getZoneId());
-    }
-
-    private ZoneId getZoneId() {
-        return ZONE_ID;
+        System.out.println(ZONE_ID);
+        String today = doc.getToday(ZONE_ID);
+        System.out.println(today);
     }
 
 }
