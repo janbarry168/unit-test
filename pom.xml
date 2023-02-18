@@ -9,10 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>project.janbarry</groupId>
-    <artifactId>unit-test-demo</artifactId>
+    <artifactId>unit-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>unit-test-demo</name>
-    <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -32,7 +30,6 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
     <build>

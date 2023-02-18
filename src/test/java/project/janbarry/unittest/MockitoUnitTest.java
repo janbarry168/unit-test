@@ -1,4 +1,4 @@
-package project.janbarry.unittestdemo;
+package project.janbarry.unittest;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

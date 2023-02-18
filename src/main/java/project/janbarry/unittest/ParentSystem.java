@@ -1,4 +1,4 @@
-package project.janbarry.unittestdemo;
+package project.janbarry.unittest;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
